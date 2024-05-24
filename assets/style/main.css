@@ -10,6 +10,7 @@ nav ul{
 header{
     position: sticky;
     top:0;
+    z-index: 100;
     box-shadow: 0px 1.647px 8.237px 0px rgba(0, 0, 0, 0.10);
     padding:20px 0;
     background-color: #fff;
@@ -45,6 +46,84 @@ header .auth a:last-of-type{
     padding:5px 20px;
     border-radius: 5px;
 }
+/*start testmonils*/
+
+.testimonals{
+    text-align: center;
+    padding: 40px 0;
+}
+
+.testimonals .row{
+    gap: 40px;
+   
+}
+.testimonals h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.testimonal .user-info img{
+    width:45px;
+    height:45px;
+    display: flex;
+}
+.testimonal{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    flex-wrap: wrap;
+    width:calc((100% - 40px) / 2);
+    box-shadow: 0px 8.237px 8.237px 0px rgba(0, 0, 0, 0.10);
+    padding: 40px 25px;
+    position: relative;
+
+
+}
+.user-info{
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.user-data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+.user-data span{
+    font-size: 15px;
+    color:#969696;
+    font-weight: 400;
+}
+
+.rating{
+    display: flex;
+    gap:5px;
+    flex-wrap: wrap;
+   
+}
+.rating img{
+    width:20px;
+    height: 20px;
+}
+.testimonal::after{
+    content:'';
+    position: absolute;
+    border-top:solid 30px #F4F4F4;
+    border-left: solid 30px transparent;
+    border-right:solid 30px  #F4F4F4;
+    border-bottom:solid 30px  transparent;
+    top:0;
+    right:0;
+    
+}
+blockquote q{
+color:#646464;
+line-height: 10px;
+font-size: 16px;
+}
 footer{
     background-color:#393E46;
     color:#fff;
@@ -61,6 +140,7 @@ footer .end{
     }
 footer .row{
    gap: 40px;
+   flex-wrap: wrap;
 }
 footer .start{
     display: flex;
@@ -111,4 +191,5 @@ footer .end .footerItem ul{
 footer .end .row{
 align-items: flex-start;
 }
+
 
