@@ -7,7 +7,7 @@
 }
 body{
     font-family: var(--mainFont);
-    height: 5000px;
+   
 }
 *{
     margin: 0;
@@ -34,4 +34,11 @@ ul{
 }
 .active{
     font-weight: 900;
+}
+.btn{
+    background-color:var(--maintColor);
+    font-weight: 600;
+    color:#fff;
+    padding:5px 15px;
+    border-radius: 5px;
 }
